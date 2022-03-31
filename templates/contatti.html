@@ -104,6 +104,7 @@
         <div class="col-sm-12 col-md-12 col-lg-6 itm2 mb-3 ">
 
             <form action="{% static 'php/contatti.php' %}" method="post" id="contatti">
+                {% csrf_token %}
                 <p>
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" style="width:250px"/>
