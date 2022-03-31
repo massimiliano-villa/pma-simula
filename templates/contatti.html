@@ -12,10 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
     <link href="{% static 'css/contatti-style.css' %}" rel="stylesheet">
-    <title>CONTATTI</title>
+    <title>CONTATTI</title><!--
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.validate.js"></script>
-    <script src="{% static 'js/validate.js' %}"></script>
+    <script src=></script>-->
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand d-lg-none" href="home.html">
-            <img src="img-basic/footer_logo.png" alt="logo pma" width="80" height="62"
+            <img src={% static 'img/footer_logo.png' %} alt="logo pma" width="80" height="62"
                  class="d-inline-block align-text-top mrg">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -56,7 +56,7 @@
                     </ul>
                 </li>
                 <a class="navbar-brand d-none d-lg-block" href="home.html">
-                    <img src="img-basic/logo_pma.png" alt="logo pma" width="270" height="45"
+                    <img src="{% static 'img/logo_pma.png' %}" alt="logo pma" width="270" height="45"
                          class="d-inline-block align-text-top mrg">
                 </a>
                 <li class="nav-item dropdown">
@@ -115,7 +115,7 @@
                 <p>
                     <label for="messaggio">Messaggio</label>
                     <textarea name="messaggio" id="messaggio" style="width:250px;height:180px">
-</textarea>
+                    </textarea>
                 </p>
                 <br/>
                 <p><input type="submit" name="submit" id="submit" value="Invia"/></p>
@@ -131,7 +131,7 @@
         <div class="col-sm-12">
             <h3>DOVE SIAMO</h3>
             <a href="https://www.google.it/maps/search/Via+Santi+12,+41032+Cavezzo+(MO)/@44.8338015,11.0265931,16z/data=!3m1!4b1?hl=it">
-                <img src="img-contatti/ico_posizione.png" class="icone " alt="icone" width="22" height="34">
+                <img src="{% static 'img/ico_posizione.png' %}" class="icone " alt="icone" width="22" height="34">
                 <h7>Via Santi 12, 41032 Cavezzo (MO), Italy</h7>
             </a>
 
@@ -147,17 +147,17 @@
 <!--FOOTER-->
 <footer class="container-fluid">
     <div class="container footer-content text-center">
-        <img src="img-basic/footer_logo.png" class="footer-logo mrg" alt="logo pma" width="90" height="80">
+        <img src="{% static 'img/footer_logo.png' %}" class="footer-logo mrg" alt="logo pma" width="90" height="80">
         <div class="container social">
             <a href="https://www.instagram.com/pmamotorsport/?hl=en"
                alt="instagram" width="22" height="22">
-                <img src="img-basic/logo_instagram.png" class="mrg" alt="instagram" width="22" height="22"></a>
+                <img src="{% static 'img/logo_instagram.png' %}" class="mrg" alt="instagram" width="22" height="22"></a>
             <a href="https://mobile.twitter.com/motorsportpma"
                alt="twitter" width="26" height="23">
-                <img src="img-basic/logo_twitter.png" class="mrg" alt="twitter" width="26" height="23"></a>
+                <img src="{% static 'img/logo_twitter.png' %}" class="mrg" alt="twitter" width="26" height="23"></a>
             <a href="https://m.facebook.com/pmamotorsport/"
                alt="facebook" width="13" height="23">
-                <img src="img-basic/logo_facebook.png" class="mrg" alt="facebook" width="13" height="23"></a>
+                <img src="{% static 'img/logo_facebook.png' %}" class="mrg" alt="facebook" width="13" height="23"></a>
             <br>
             <br>
             <h10 class="c-grey f-sm-bold">COPYRIGHT 2021 &copy PMA MOTORSPORT</h10>
